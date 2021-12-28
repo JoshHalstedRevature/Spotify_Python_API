@@ -1,0 +1,5 @@
+# Use command prompt or Powershell, VSCode sometimes crashes with large downloads
+pip install virtualenv
+
+Technologies Used:
+Microsoft Azure
