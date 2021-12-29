@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "C:\\Users\\98jjm\\.msvscode.hdinsight\\hdinsightJupyter\\Scripts\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\98jjm\\.msvscode.hdinsight\\hdinsightJupyter\\Scripts\\python.exe",
+    "jupyter.jupyterLaunchTimeout": 240000,
+    "synapseSparkpoolJobSubmission.synapseSparkPoolClusterConf": [
+        {
+            "name": "spotify-api-cae pysparkspotify",
+            "filePath": "c:\\Users\\98jjm\\OneDrive\\Documents\\spotify-api-project\\Spotify_Python_API\\main.py"
+        }
+    ]
+}

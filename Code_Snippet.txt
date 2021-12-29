@@ -1,5 +1,88 @@
-# Use command prompt or Powershell, VSCode sometimes crashes with large downloads
-pip install virtualenv
+To package the files:
+py -m pip install --upgrade pip
+py -m pip install --upgrade build
+py -m build
 
 Technologies Used:
 Microsoft Azure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** CODE HELL (code that may be resurrected maybe idk) **
+
+# Use command prompt or Powershell, VSCode sometimes crashes with large downloads
+pip install virtualenv
+
+#how to run the integrated Azure cluster in interactive mode:
+0. Download Spark and Hive tools extension
+1. Sign into Azure
+2. Set default spark pool (using pysparkspotify) (... in the spotify-api-cae Synapse workspace)
+3. >Python: Select interpreter >> Python3.X.X
+4. >Developer: Reload Window
+5. Right click -> Synapse: PySpark Interactive
+    *may take a few minutes to setup for the first time
+6. 
