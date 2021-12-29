@@ -26,6 +26,22 @@ This is a project intended to query a set of data using Hadoop HDFS and Hive in 
 
 ## Usage
 
+If the user is working on this package of files on a local machine (e.g. Python is installed on local Windows or Linux machine), then the user needs to transfer the file from local to maria_dev with the following command:
+
+scp -P 2222 C:\Path\to\myTest.txt maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev
+
+Then, using a network file transfer application like PuTTY, transfer the myTest.txt file from /home/maria_dev to /user/maria_dev via the following command:
+
+The user then needs to transfer the executable from local to /home/maria_dev:
+
+scp -P 2222 C:\Path\to\example.py maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev
+
+Once three things are completed, the user then needs to do the following:
+* Thing 1
+* Thing 2
+* Thing 3
+* Thing 4
+* Thing 5
 
 ## License
 
