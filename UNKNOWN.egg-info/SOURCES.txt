@@ -1,3 +1,4 @@
+LICENSE.md
 README
 pyproject.toml
 UNKNOWN.egg-info/PKG-INFO

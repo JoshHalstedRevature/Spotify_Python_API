@@ -1,1 +1,32 @@
-##Spotify Python Api
+# Spotify Python Api
+
+## Project Description
+
+This is a project intended to query a set of data using Hadoop HDFS and Hive in order to answer the following questions:
+
+* What tracks are most popular amongst Spotify users.
+* How many tracks gained popularity over 90 out of 100.
+* Which tracks released in March 2020 gained popularity over 80.
+* Is there a correlation between popularity and a track's traits?
+* How long should an average track last according to today's standards?
+* What is the correlation between tracks' different features?
+* Who is currently most popular and what genres do they represent?
+
+## Technologies Used
+
+* Hadoop HDFS
+* Hive
+* PySpark
+* Python (Anaconda)
+* Kaggle
+
+## Features
+
+
+
+## Usage
+
+
+## License
+
+See the LICENSE.md file for more information.

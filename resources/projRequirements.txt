@@ -3,9 +3,9 @@ Spotify:
 Dataset: https://www.kaggle.com/lehaknarnauli/spotify-datasets
 
 Tasks:
-What tracks are most popular amongst Spotify users.
-How many tracks gained popularity over 90 out of 100.
-Which tracks released in March 2020 gained popularity over 80.
+What tracks are most popular amongst Spotify users?
+How many tracks gained popularity over 90 out of 100?
+Which tracks released in March 2020 gained popularity over 80?
 Is there a correlation between popularity and a track's traits?
 How long should an average track last according to today's standards?
 What is the correlation between tracks' different features?
