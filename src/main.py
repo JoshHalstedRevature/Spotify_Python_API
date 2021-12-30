@@ -1,7 +1,6 @@
 #program to ..
 #Python 2.7.5 in HortonWorks
-#import pyspark
-#import requests
+from pyspark.sql import SparkSession
 import urllib, httplib
 
 # Globals for now
@@ -10,9 +9,9 @@ Client_ID = '4ffccca0d17a4f70b049aab86f2cc0bb'
 Client_Secret = '5e2d61615b964c42a14d07e1c61d110c'
 
 def init():
-     # spark = SparkSession.builder\
-     #      .appName('SparkByExamples.com')\
-     #      .getOrCreate()
+     spark = SparkSession.builder\
+          .appName('SparkByExamples.com')\
+          .getOrCreate()
      
      #searching for kanye
      headers = {

@@ -5,6 +5,8 @@ py -m build
 
 pip install requests
 
+scp -P 2222 .\src\main.py maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev
+
 Technologies Used:
 
 
