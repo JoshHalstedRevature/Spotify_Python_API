@@ -55,7 +55,9 @@ class SpotifyRequests:
           
           if response.status == 200:
                print(response.read())
-               #self._access_token =  response.read() #need to parse this
+               #self._access_token =  response.read() #need to parse this JSON String
+               #Example of the output string:
+               #{"access_token":"BQBYyox-Gte1kabunNBWRB5e302Euzi13fa5dxt-FSbZmoyf-kYDsw7zGaXVld2GU39LMoS-PX-y8Zncj6Q","token_type":"Bearer","expires_in":3600}
           else:
                print(response.read())
 
