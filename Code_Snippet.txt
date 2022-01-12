@@ -3,7 +3,13 @@ py -m pip install --upgrade pip
 py -m pip install --upgrade build
 py -m build
 
-pip install requests
+or just zip the extra files manually
+
+spark-submit --py-files spotifyapi.zip main.py
+
+                         ^^All extra files   ^^The main file to run
+
+
 
 Technologies Used:
 
