@@ -1,9 +1,11 @@
-To package the files:
-py -m pip install --upgrade pip
-py -m pip install --upgrade build
-py -m build
+Zip the extra files manually:
 
-or just zip the extra files manually
+tar.exe -a -c -f testZip.zip sparkcontrol.py spotifyapi
+.py
+
+or
+
+tar.exe -a -c -f spotifyProject.zip s*.py 
 
 spark-submit --py-files spotifyapi.zip main.py
 
