@@ -13,9 +13,7 @@ FILE_DIRECTORY = __file__
 CSV_DIRECTORY = str(FILE_DIRECTORY).split("\src")[0] + "/resources"
 
 ARTISTS_CSV = os.path.join(CSV_DIRECTORY, "artists.csv")
-#ARTISTS_CSV = os.path.join(CSV_DIRECTORY, "Test_Artists.csv")
 TRACKS_CSV = os.path.join(CSV_DIRECTORY, "tracks.csv")
-#TRACKS_CSV = os.path.join(CSV_DIRECTORY, "Test_Tracks.csv")
 
 def ImportCSV2df(filename):
     df = pd.read_csv(filename)
