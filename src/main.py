@@ -2,6 +2,7 @@
 #Python 3.9.6
 import pyspark
 import requests
+import MergeData
 
 # Globals for now
 OAuth_Token = 'BQAagdfCBY0GqVjL8wixXIBcoJeVvjo7DUj3xMAbgnxltPI3fIB5OlzkkituDrcFLSt14h-KO47jllQpFDUJHTybXzxpcg35raiga0IMvhBmkjXYS9Mt3TPnDVDwAu-2pz-wYINSBdOEMaXuDuuGWTJIVpiywgd7jfviaeFv'
@@ -27,10 +28,9 @@ def init():
 
      print(content.json())
 
-
-
 def main():
      init()
+     MergeData.MergeCSVs
 
 if __name__ == '__main__':
      main()
