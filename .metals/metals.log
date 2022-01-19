@@ -11,3 +11,4 @@
 [0m2022.01.13 15:24:11 WARN  no build target for: C:\Users\98jjm\OneDrive\Documents\_Revature_Code\Samples\Oct2021ScalaBatch\scalahdfs\src\main\scala\example\hfdsdemo.scala[0m
 Jan 13, 2022 3:56:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+[0m2022.01.13 18:28:19 INFO  shutting down Metals[0m

@@ -2,10 +2,16 @@
 #Python 2.7.5 in HortonWorks
 from sparkcontrol import SparkControl
 from spotifyapi import SpotifyRequests
+from AmazonS3 import AmazonS3
 
 def main():
      sc = SparkControl() # comment out when testing in VSCode
-     SpotifyRequests().passing_credentials()
+     sr = SpotifyRequests() 
+
+     print(sr.get_playlist_tracks("37i9dQZF1EQpgT26jgbgRI"))     #example of the repsonse from an api call
+     AmazonS3().upload()
+     print("Test file uploaded")
+
 
 if __name__ == '__main__':
      main()

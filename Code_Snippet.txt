@@ -1,11 +1,11 @@
+pip install boto3
+
 Zip the extra files manually:
 
-tar.exe -a -c -f testZip.zip sparkcontrol.py spotifyapi
-.py
+tar.exe -a -c -f test2Zip.zip sparkcontrol.py spotifyapi.py AmazonS3.py
 
-or
-
-tar.exe -a -c -f spotifyProject.zip s*.py 
+scp -P 2222 ./test2Zip.zip maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev
+scp -P 2222 ./main.py maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev
 
 spark-submit --py-files spotifyapi.zip main.py
 

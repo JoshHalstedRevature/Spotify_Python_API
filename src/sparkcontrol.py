@@ -12,4 +12,3 @@ class SparkControl:
      def __del__(self):
           """Destructor"""
           self.spark.stop()
-          
