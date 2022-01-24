@@ -87,29 +87,32 @@ class SpotifyRequests:
                return str(response.status)
 
      def get_playlist_tracks(self, playlist_id, market = '', fields = '', additional_types = ''):
-        """"""
-        playlistHeaders = {
-               'Content-Length' : 0,                   # no body so content-length should explicitly be 0
-               'Accept' : 'application/json',
-               'Content-Type' : 'application/json',
-               'Authorization' : 'Bearer {}'.format(self._access_token)
-          }
-          
-        params = ''
+          """"""
+          playlistHeaders = {
+                    'Content-Length' : 0,                   # no body so content-length should explicitly be 0
+                    'Accept' : 'application/json',
+                    'Content-Type' : 'application/json',
+                    'Authorization' : 'Bearer {}'.format(self._access_token)
+               }
+               
+          params = ''
 
-        if market != '': params += '&' + urllib.urlencode({ 'market' : market})
-        if fields != '': params += '&' + urllib.urlencode({ 'fields' : fields})
-        if additional_types != '': params += '&' + urllib.urlencode({ 'additional_types' : additional_types})
+          if market != '': params += '&' + urllib.urlencode({ 'market' : market})
+          if fields != '': params += '&' + urllib.urlencode({ 'fields' : fields})
+          if additional_types != '': params += '&' + urllib.urlencode({ 'additional_types' : additional_types})
 
-        self.__SpotifyConnect.request(
-               'GET',
-               url = '/v1/playlists/{}/tracks?'.format(playlist_id),
-               headers = playlistHeaders
-          )
+          self.__SpotifyConnect.request(
+                    'GET',
+                    url = '/v1/playlists/{}/tracks?'.format(playlist_id),
+                    headers = playlistHeaders
+               )
 
-        response = self.__SpotifyConnect.getresponse()
+          response = self.__SpotifyConnect.getresponse()
 
-        if response.status == 200:
-            return response.read()
-        else:
-            return str(response.status)
+          if response.status == 200:
+               return response.read()
+          else:
+               return str(response.status)
+
+
+

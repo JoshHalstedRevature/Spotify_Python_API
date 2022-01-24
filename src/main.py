@@ -3,6 +3,7 @@
 from sparkcontrol import SparkControl
 from spotifyapi import SpotifyRequests
 from AmazonS3 import AmazonS3
+from Menu import Menu
 
 def main():
      sc = SparkControl() # comment out when testing in VSCode
@@ -12,6 +13,7 @@ def main():
      AmazonS3().upload()
      print("Test file uploaded")
 
+     Menu.main_menu()
 
 if __name__ == '__main__':
      main()
