@@ -1,0 +1,14 @@
+[0m2022.01.13 15:18:23 INFO  Started: Metals version 0.10.9 in workspace 'C:\Users\98jjm\OneDrive\Documents\spotify-api-project\Spotify_Python_API' for client Visual Studio Code 1.63.2.[0m
+[0m2022.01.13 15:18:23 INFO  time: initialize in 0.37s[0m
+[0m2022.01.13 15:18:24 WARN  Build server is not auto-connectable.[0m
+[0m2022.01.13 15:18:24 WARN  no build tool detected in workspace 'C:\Users\98jjm\OneDrive\Documents\spotify-api-project\Spotify_Python_API'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2022.01.13 15:18:40 WARN  no build target for: C:\Users\98jjm\OneDrive\Documents\_Revature_Code\Samples\Oct2021ScalaBatch\SparkSamples\Scala\fold2.scala[0m
+[0m2022.01.13 15:18:42 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2022.01.13 15:18:45 INFO  time: code lens generation in 5.21s[0m
+[0m2022.01.13 15:18:45 INFO  time: code lens generation in 5.22s[0m
+[0m2022.01.13 15:19:19 WARN  no build target for: C:\Users\98jjm\OneDrive\Documents\_Revature_Code\Samples\Oct2021ScalaBatch\KafkaCode\SparkStreamFileSource.scala[0m
+[0m2022.01.13 15:23:52 WARN  no build target for: C:\Users\98jjm\OneDrive\Documents\_Revature_Code\Samples\Oct2021ScalaBatch\scalahdfs\src\main\scala\example\scalaapi.scala[0m
+[0m2022.01.13 15:24:11 WARN  no build target for: C:\Users\98jjm\OneDrive\Documents\_Revature_Code\Samples\Oct2021ScalaBatch\scalahdfs\src\main\scala\example\hfdsdemo.scala[0m
+Jan 13, 2022 3:56:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2022.01.13 18:28:19 INFO  shutting down Metals[0m

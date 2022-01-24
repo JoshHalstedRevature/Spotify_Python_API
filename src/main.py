@@ -1,36 +1,20 @@
 #program to ..
-#Python 3.9.6
-import pyspark
-import requests
-import MergeData
-
-# Globals for now
-OAuth_Token = 'BQAagdfCBY0GqVjL8wixXIBcoJeVvjo7DUj3xMAbgnxltPI3fIB5OlzkkituDrcFLSt14h-KO47jllQpFDUJHTybXzxpcg35raiga0IMvhBmkjXYS9Mt3TPnDVDwAu-2pz-wYINSBdOEMaXuDuuGWTJIVpiywgd7jfviaeFv'
-Client_ID = '4ffccca0d17a4f70b049aab86f2cc0bb'
-Client_Secret = '5e2d61615b964c42a14d07e1c61d110c'
-
-def init():
-     # spark = SparkSession.builder\
-     #      .appName('SparkByExamples.com')\
-     #      .getOrCreate()
-     
-     #searching for kanye
-     headers = {
-          'Accept' : 'application/json',
-          'Content-Type' : 'application/json',
-          'Authorization' : f'Bearer {OAuth_Token}'
-     }
-
-     content = requests.get(
-          'https://api.spotify.com/v1/search?q=kanye&type=artist',
-          headers = headers
-     )
-
-     print(content.json())
+#Python 2.7.5 in HortonWorks
+from sparkcontrol import SparkControl
+from spotifyapi import SpotifyRequests
+from AmazonS3 import AmazonS3
+from Menu import Menu
 
 def main():
-     init()
-     MergeData.MergeCSVs
+     sc = SparkControl() # comment out when testing in VSCode
+     sr = SpotifyRequests() 
+
+     print(sr.get_playlist_tracks("37i9dQZF1EQpgT26jgbgRI"))     #example of the repsonse from an api call
+     AmazonS3().upload()
+     print("Test file uploaded")
+
+     Menu.main_menu()
+
 
 if __name__ == '__main__':
      main()

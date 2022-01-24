@@ -1,9 +1,17 @@
-To package the files:
-py -m pip install --upgrade pip
-py -m pip install --upgrade build
-py -m build
+pip install boto3
 
-pip install requests
+Zip the extra files manually:
+
+tar.exe -a -c -f test2Zip.zip sparkcontrol.py spotifyapi.py AmazonS3.py
+
+scp -P 2222 ./test2Zip.zip maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev
+scp -P 2222 ./main.py maria_dev@sandbox-hdp.hortonworks.com:/home/maria_dev
+
+spark-submit --py-files spotifyapi.zip main.py
+
+                         ^^All extra files   ^^The main file to run
+
+
 
 Technologies Used:
 
@@ -86,4 +94,30 @@ pip install virtualenv
 4. >Developer: Reload Window
 5. Right click -> Synapse: PySpark Interactive
     *may take a few minutes to setup for the first time
-6. 
+
+
+def user_login(self):
+          """Prompts the user to login (for testing: ctrlaltelitedeveloper@gmail.com; pswrd: check slack)"""
+          params = urllib.urlencode({
+               'repsonce_type' : 'code',
+               'client_id': self._Client_ID,
+               'scope' : 'user-read-private user-read-email',         #sample of permissions (needs urlencoding)
+               'redirect_uri': 'http://localhost:8888',               #Spotify API wants a site to redirect to, doesnt have to be a valid site
+               'state' : 'x2eVlL0PymxEx4qI4MnfXiSPHkQLyEET'           #for security (should change everytime the function is called)
+          })
+
+          authConnection = httplib.HTTPSConnection('api.spotify.com')
+
+          authConnection.request(
+               'GET',
+               url = 'https://accounts.spotify.com/authorize?' + params
+          )
+
+          response = authConnection.getresponse()
+
+          print(response.status, response.reason)  
+          
+          if response.status == 200:
+               return response.read() 
+          else:
+               return str(response.status)
