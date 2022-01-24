@@ -20,7 +20,6 @@ def ImportCSV2df(filename):
     df = pd.read_csv(filename)
     return df
 
-
 def String2List(dataframe, column):
     for idx, row in dataframe.iterrows():
         dataframe[column][idx] = dataframe[column][idx].strip(
@@ -39,7 +38,6 @@ def RemoveElementFromList(List, Word):
             List.remove(elem)
     return List
 
-
 def ExpandDF(dataframe, id_vars=None, rename_column=None):
     new = dataframe[rename_column].apply(pd.Series) \
         .merge(dataframe, left_index=True, right_index=True) \
@@ -52,6 +50,7 @@ def ExpandDF(dataframe, id_vars=None, rename_column=None):
 
 
 def ShapeDF(CSV_File, drop_column=None, reformat_column=None):
+
     dataframe = ImportCSV2df(CSV_File)
     if drop_column != None:
         dataframe.pop(drop_column)
@@ -67,7 +66,6 @@ def JoinDFs(df1, df2, left_key, right_key):
     merged_df = pd.merge(df1, df2, left_on=left_key,
                          right_on=right_key, how='inner')
     return merged_df
-
 
 def MergeCSVs():
     Total_Data = Path(os.path.join(CSV_DIRECTORY, "Merged_Data.csv"))
@@ -98,3 +96,4 @@ with warnings.catch_warnings():
     warnings.simplefilter("ignore")
     if __name__ == '__main__':
         MergeCSVs()
+
